@@ -1,7 +1,12 @@
+<?php
+include_once 'include/functions.php';
+$settings=show_settings();
+?>
 <!DOCTYPE HTML>
-<html>
+<html lang="fa">
 <head>
-<title>قالب سایت کشاورزی</title>
+<title><?php echo $settings['title'] ?></title>
+    <link rel="shortcut icon" href="admin/<?php echo $settings['logo'] ?>" type="image/x-icon">
 <!---css--->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
@@ -33,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 				<div class="head-bottom">
 					<div class="logo  wow fadeInDownBig animated animated" data-wow-delay="0.4s">
-						<h1><a href="index.html">Agrox<span>Farming company</span></a></h1>
+						<h1><a href="index.html"><?php echo $settings['title'] ?><span><?php echo $settings['logotype'] ?></span></a></h1>
 					</div>
 				</div>
 			</div>
@@ -57,12 +62,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.html" class="wow fadeInDownBig" data-wow-delay=".1s">صفحه اصلی<span class="sr-only">(current)</span></a></li>
-								<li><a href="about.html" class="wow fadeInDownBig" data-wow-delay=".2s">درباره ما</a></li>
-								<li><a href="services.html" class="wow fadeInDownBig" data-wow-delay=".4s">خدمات</a></li>
-								<li><a href="gallery.html" class="wow fadeInDownBig" data-wow-delay=".6s">گالری</a></li>
-								<li><a href="codes.html" class="wow fadeInDownBig" data-wow-delay=".7s">نمونه ها</a></li>
-								<li><a href="contact.html" class="wow fadeInDownBig" data-wow-delay=".9s">تماس با ما</a></li>
+                                <?php
+                                $row=listmenudefault();
+                                foreach ($row as $val):
+                                    ?>
+                                    <li class="dropdown">
+                                        <a href="<?php echo $val['url']; ?>" class="wow fadeInDownBig" data-wow-delay=".2s"><?php echo $val['title']; ?></a>
+                                        <?php
+                                        $rows=list_Sub_Menu_Default($val['id']);
+                                        if ($rows):
+                                            ?>
+                                            <ul class="dropdown-menu">
+                                                <?php
+                                                foreach ($rows as $value):
+                                                    ?>
+                                                    <li>
+                                                        <a href="<?php echo $value['url']; ?>"><?php echo $value['title']; ?></a>
+                                                    </li>
+                                                <?php
+                                                endforeach;
+                                                ?>
+                                            </ul>
+                                        <?php
+                                        endif;
+                                        ?>
+                                    </li>
+                                <?php
+                                endforeach;
+                                ?>
 							</ul>
 						</div>
 					</div>
@@ -76,56 +103,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 				<h3>لیست محصولات</h3>
 				<div class="overview-grids">
+                    <?php
+                    @$products=listProDefault();
+                    if (isset($products)){
+                    foreach ($products as $value):
+                    ?>
 					<div class="col-md-3 list-grid wow fadeInLeft animated" data-wow-delay=".5s">
 						<div class="list-img">
-							<img src="images/n1.jpg" alt=" " />
+							<img src="admin/<?php echo $value['img']?>" width="200" height="200" alt=" " />
 							<div class="textbox"></div>
 						</div>
-						<h4>
-
-لورم ایپسوم</h4>
-						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+						<h4><?php echo $value['title']?></h4>
+						<p><?php echo $value['text']?></p>
 					</div>
-					<div class="col-md-3 list-grid wow fadeInLeft animated" data-wow-delay=".5s">
-						<div class="list-img">
-							<img src="images/n1.jpg" alt=" " />
-							<div class="textbox"></div>
-						</div>
-						<h4>
-
-							لورم ایپسوم</h4>
-						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-					</div>
-					<div class="col-md-3 list-grid wow fadeInLeft animated" data-wow-delay=".5s">
-						<div class="list-img">
-							<img src="images/n1.jpg" alt=" " />
-							<div class="textbox"></div>
-						</div>
-						<h4>
-
-							لورم ایپسوم</h4>
-						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-					</div>
-					<div class="col-md-3 list-grid wow fadeInLeft animated" data-wow-delay=".5s">
-						<div class="list-img">
-							<img src="images/n1.jpg" alt=" " />
-							<div class="textbox"></div>
-						</div>
-						<h4>
-
-							لورم ایپسوم</h4>
-						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-					</div>
-					<div class="col-md-3 list-grid wow fadeInLeft animated" data-wow-delay=".5s">
-						<div class="list-img">
-							<img src="images/n1.jpg" alt=" " />
-							<div class="textbox"></div>
-						</div>
-						<h4>
-
-							لورم ایپسوم</h4>
-						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-					</div>
+                    <?php
+                    endforeach;
+                    }else{
+                        echo "<span style='font-size: 25px;'>محصولی یافت نشد!</span>";
+                    }
+                    ?>
 					<div class="clearfix"></div>
 				</div>
 			</div>

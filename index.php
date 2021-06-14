@@ -256,10 +256,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 ?>
 				<div class="news-grids wow fadeInLeft animated" data-wow-delay=".5s">
 					<div class="col-md-4 new-grid">
-						<div id="box" class="burst-circle teal">
+						<div id="box" class="burst-circle teal" style="width: 200px; height: 200px">
 							<div class="caption"></div>
-							<img src="admin/<?php echo $value['img'] ?>" width="200" height="200" class="img-responsive" />
-							<h4> طرح‌نما </h4>
+							<img src="admin/<?php echo $value['img'] ?>" width="50" height="50" class="img-responsive" />
+							<h4> <?php echo $value['title'] ?> </h4>
 						</div>
 					</div>
 					<div class="col-md-8 new-grid1 hvr-bounce-to-left">

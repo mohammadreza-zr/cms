@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac7f45ab-5a5a-4945-98a6-f9e9909a47c5" name="Default Changelist" comment="widget settings added...">
-      <change afterPath="$PROJECT_DIR$/images/widget/widget-1674959558/widget-964143631.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/widget/widget-1893921796/widget-1499053977.jpg" afterDir="false" />
+    <list default="true" id="ac7f45ab-5a5a-4945-98a6-f9e9909a47c5" name="Default Changelist" comment="CKeditor added...">
+      <change afterPath="$PROJECT_DIR$/images/news/news-1616946139/product-1991220538.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/products/pro-679673108/product-1307983911.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/contact/add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/contact/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/contact/detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/news/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/news/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/news/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/news/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/product/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/product/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/product/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/product/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/settings/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/settings/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/widget/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/widget/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/widget/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/widget/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +79,7 @@
       <workItem from="1619527302427" duration="677000" />
       <workItem from="1619587112875" duration="20135000" />
       <workItem from="1619883850599" duration="646000" />
-      <workItem from="1623665784013" duration="15728000" />
+      <workItem from="1623665784013" duration="16815000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1623677568850</created>
@@ -103,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623682166915</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="CKeditor added...">
+      <created>1623684713320</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623684713320</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +123,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update" />
     <MESSAGE value="widget settings added..." />
-    <option name="LAST_COMMIT_MESSAGE" value="widget settings added..." />
+    <MESSAGE value="CKeditor added..." />
+    <option name="LAST_COMMIT_MESSAGE" value="CKeditor added..." />
   </component>
 </project>

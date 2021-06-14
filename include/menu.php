@@ -85,3 +85,12 @@ function listnewsdefault(){
     }
     return $result;
 }
+function list_widget_default(){
+    $connection=config();
+    $sql="SELECT * FROM widget_tbl";
+    $row=mysqli_query($connection,$sql);
+    while ($res=mysqli_fetch_assoc($row)){
+        $result[]=$res;
+    }
+    return $result;
+}

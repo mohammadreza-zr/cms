@@ -8,7 +8,8 @@ $settings=show_settings();
 <html>
 <head>
 <title><?php echo $settings['title'] ?></title>
-<!---css--->
+    <link rel="shortcut icon" href="admin/<?php echo $settings['logo'] ?>" type="image/x-icon">
+    <!---css--->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <!---css--->
@@ -133,43 +134,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="welcome-section">
 			<div class="container">
 			<div class="banner-bottom">
-					<div class="banner-grids">
-						<div class="col-md-4 banner-grid wow fadeInRight animated" data-wow-delay=".5s">
-							<h4>
-محصولات برتر</h4>
-							<div class="ban1">
-								<div class="ban-images  view fourth-effect">
-									<img src="images/b1.jpg" class="img-responsive" alt=""/>
-								<div class="mask"></div>
-								</div>
-								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-								<a href="about.html" class="button hvr-wobble-bottom">اطلاعات بیشتر</a>
-							</div>
-						</div>
-						<div class="col-md-4 banner-grid wow fadeInDownBig" data-wow-delay=".4s">
-							<h4>دانه کشاورزی</h4>
-								<div class="ban1">
-									<div class="ban-images  view fourth-effect">
-										<img src="images/b2.jpg" class="img-responsive" alt=""/>
-									<div class="mask"></div>
-									</div>
-									<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-									<a href="about.html" class="button hvr-wobble-bottom">اطلاعات بیشتر</a>
-								</div>
-							</div>
-						<div class="col-md-4 banner-grid wow fadeInLeft animated" data-wow-delay=".5s">
-							<h4>فن آوری های ما</h4>
-								<div class="ban1">
-									<div class="ban-images  view fourth-effect">
-										<img src="images/b1.jpg" class="img-responsive" alt=""/>
-										<div class="mask"></div>
-									</div>
-									<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-									<a href="about.html" class="button hvr-wobble-bottom">اطلاعات بیشتر</a>
-								</div>
-							</div>
-						<div class="clearfix"></div>
-					</div>
+                <div class="banner-grids">
+                    <?php
+                    $list=list_widget_default();
+                    if (isset($list)){
+                        foreach ($list as $value):
+                            ?>
+                            <div class="col-md-4 banner-grid wow fadeInRight animated" data-wow-delay=".5s">
+                                <h4><?php echo $value['title']?></h4>
+                                <div class="ban1">
+                                    <div class="ban-images  view fourth-effect">
+                                        <img src="admin/<?php echo $value['img']?>" class="img-responsive" alt=""/>
+                                        <div class="mask"></div>
+                                    </div>
+                                    <p><?php echo $value['text']?></p>
+                                    <a href="about.html" class="button hvr-wobble-bottom">اطلاعات بیشتر</a>
+                                </div>
+                            </div>
+                        <?php
+                        endforeach;
+                    }
+                    ?>
+                    <div class="clearfix"></div>
+                </div>
 				</div>
 				<h2>خوش آمدید</h2>
 				<div class="welcome-grids">

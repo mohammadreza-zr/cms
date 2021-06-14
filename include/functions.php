@@ -39,6 +39,7 @@ session_start();
         return $to;
     }
     include_once 'settings.php';
+    $settings=show_settings();
     @$m=$_GET['m']?$_GET['m']:'index';
     switch ($m){
         case 'index':
@@ -60,5 +61,9 @@ session_start();
         case 'contact':
             include_once 'contact.php';
             break;
+        case 'widget':
+            include_once 'widget.php';
+            break;
     }
     ?>
+<link rel="shortcut icon" href="<?php echo $settings['logo'] ?>" type="image/x-icon">

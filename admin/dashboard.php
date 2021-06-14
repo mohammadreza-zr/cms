@@ -304,6 +304,12 @@
                         </a>
                     </li>
                     <li class="sub-menu">
+                        <a href="dashboard.php?m=settings&p=edit" class="">
+                            <i class="las la-cog"></i>
+                            <span>تنظیمات</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
                         <a href="javascript:" class="">
                             <i class="las la-bars"></i>
                             <span>مدیریت منو ها</span>
@@ -369,10 +375,15 @@
                         </ul>
                     </li>
                     <li class="sub-menu">
-                        <a href="dashboard.php?m=settings&p=edit" class="">
-                            <i class="las la-cog"></i>
-                            <span>تنظیمات</span>
+                        <a href="javascript:" class="">
+                            <i class="lar la-newspaper"></i>
+                            <span>ویجت های زیر اسلاید</span>
+                            <span class="arrow"></span>
                         </a>
+                        <ul class="sub">
+                            <li><a class="" href="dashboard.php?m=widget&p=list">لیست ویجت ها</a></li>
+                            <li><a class="" href="dashboard.php?m=widget&p=add">افزودن ویجت جدید</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <!-- sidebar menu end-->

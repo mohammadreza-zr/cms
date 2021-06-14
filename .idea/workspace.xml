@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac7f45ab-5a5a-4945-98a6-f9e9909a47c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/settings/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/iranflag11.png/logo-1389692981.png" afterDir="false" />
+    <list default="true" id="ac7f45ab-5a5a-4945-98a6-f9e9909a47c5" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/admin/widget/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/widget/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/widget/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/widget/list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/iranflag11.png/logo-1355222644.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/products/pro-119962057/product-1054634249.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/products/pro-893868403/product-2131926760.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/widget/widget-1394806338/widget-380284501.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/widget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/menu/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/menu/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/settings/list.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo/4df67d5b-de54-4350-a91d-c4b6508e8531.jpg/logo-272864195.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/iranflag11.png/logo-1389692981.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/include/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/settings.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/include" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -57,13 +59,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\cms\include" />
+      <recent name="C:\xampp\htdocs\php\cms\admin" />
       <recent name="C:\xampp\htdocs\php\mvc\admin" />
       <recent name="C:\xampp\htdocs\php\mvc\include" />
       <recent name="C:\xampp\htdocs\php\mvc\css" />
-      <recent name="C:\xampp\htdocs\php\mvc\js" />
-      <recent name="C:\xampp\htdocs\php\mvc\admin\menu" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\cms\images" />
+      <recent name="C:\xampp\htdocs\php\cms\admin\img" />
       <recent name="C:\xampp\htdocs\php\mvc\admin\menu" />
     </key>
   </component>
@@ -82,8 +86,16 @@
       <workItem from="1619527302427" duration="677000" />
       <workItem from="1619587112875" duration="20135000" />
       <workItem from="1619883850599" duration="646000" />
-      <workItem from="1623665784013" duration="8555000" />
+      <workItem from="1623665784013" duration="12945000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1623677568850</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623677568851</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,5 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

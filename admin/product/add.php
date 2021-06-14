@@ -32,7 +32,10 @@ if (isset($_POST['btn'])){
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">توضیحات</label>
-                        <textarea name="frm[text]"  class="form-control ckeditor" rows="8" placeholder="توضیحات محصول را وارد کنید"></textarea>
+                        <textarea name="frm[text]" id="editor" class="form-control ckeditor" rows="8" placeholder="توضیحات محصول را وارد کنید"></textarea>
+                        <script>
+                            CKEDITOR.replace( 'editor' );
+                        </script>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">دسته بندی</label>

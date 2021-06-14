@@ -46,7 +46,10 @@ if (isset($_POST['btn'])) {
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label">متن درباره ما</label>
                                     <div class="col-lg-10">
-                                        <textarea name="frm[aboutus]" class="form-control" cols="30" rows="10" placeholder="متن درباره ما"><?php echo $result['aboutus']?></textarea>
+                                        <textarea name="frm[aboutus]" id="editor" class="form-control" cols="30" rows="10" placeholder="متن درباره ما"><?php echo $result['aboutus']?></textarea>
+                                        <script>
+                                            CKEDITOR.replace( 'editor' );
+                                        </script>
                                     </div>
                                 </div>
                                 <div class="form-group">

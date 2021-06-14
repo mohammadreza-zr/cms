@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac7f45ab-5a5a-4945-98a6-f9e9909a47c5" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/admin/widget/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/widget/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/widget/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/widget/list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/iranflag11.png/logo-1355222644.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products/pro-119962057/product-1054634249.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products/pro-893868403/product-2131926760.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/widget/widget-1394806338/widget-380284501.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/widget.php" afterDir="false" />
+    <list default="true" id="ac7f45ab-5a5a-4945-98a6-f9e9909a47c5" name="Default Changelist" comment="widget settings added...">
+      <change afterPath="$PROJECT_DIR$/images/widget/widget-1674959558/widget-964143631.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/widget/widget-1893921796/widget-1499053977.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/contact/add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/contact/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/contact/detail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo/iranflag11.png/logo-1389692981.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/news/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/news/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/news/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/news/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/product/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/product/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/product/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/product/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/settings/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/settings/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/widget/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/widget/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/widget/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/widget/edit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +34,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1rbP3OqA4quMMea9zgvbhfZEvj0" />
   <component name="ProjectLevelVcsManager">
@@ -86,7 +87,7 @@
       <workItem from="1619527302427" duration="677000" />
       <workItem from="1619587112875" duration="20135000" />
       <workItem from="1619883850599" duration="646000" />
-      <workItem from="1623665784013" duration="12945000" />
+      <workItem from="1623665784013" duration="15728000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1623677568850</created>
@@ -95,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623677568851</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="widget settings added...">
+      <created>1623682166914</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623682166915</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="widget settings added..." />
+    <option name="LAST_COMMIT_MESSAGE" value="widget settings added..." />
   </component>
 </project>

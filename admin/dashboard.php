@@ -3,6 +3,7 @@
     if (!isset($_SESSION['username'])){
         header("location: index.php?login=first");
     }
+$settings=show_settings();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +14,8 @@
     <meta name="author" content="Mosaddek">
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="img/favicon.html">
-
-    <title>Inbox</title>
+    <script src="//cdn.ckeditor.com/4.16.1/full/ckeditor.js"></script>
+    <title><?php echo $settings['title']?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">

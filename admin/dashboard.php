@@ -369,7 +369,7 @@
                         </ul>
                     </li>
                     <li class="sub-menu">
-                        <a href="dashboard.php?m=settings&p=list" class="">
+                        <a href="dashboard.php?m=settings&p=edit" class="">
                             <i class="las la-cog"></i>
                             <span>تنظیمات</span>
                         </a>

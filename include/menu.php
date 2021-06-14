@@ -85,9 +85,3 @@ function listnewsdefault(){
     }
     return $result;
 }
-function show_settings(){
-    $connection=config();
-    $sql="SELECT * FROM settings_tbl";
-    $row=mysqli_query($connection,$sql);
-    return mysqli_fetch_assoc($row);
-}

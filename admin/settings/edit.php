@@ -21,12 +21,12 @@ if (isset($_POST['btn'])) {
             echo 'نام دیگری انتخاب کنید';
         }else{
             edit_settings($data,$logo);
-            header("location: dashboard.php?m=settings&p=list");
+            header("location: dashboard.php?m=settings&p=edit");
         }
     }else{
         $logo=$result['logo'];
         edit_settings($data,$logo);
-        header("location: dashboard.php?m=settings&p=list");
+        header("location: dashboard.php?m=settings&p=edit");
     }
 }
 ?>
@@ -121,6 +121,12 @@ if (isset($_POST['btn'])) {
                                     <label class="col-lg-2 control-label">اینستاگرام</label>
                                     <div class="col-lg-6">
                                         <input type="text" name="frm[instagram]" value="<?php echo $result['instagram']?>" class="form-control" placeholder="instagram">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">توییتر</label>
+                                    <div class="col-lg-6">
+                                        <input type="text" name="frm[twitter]" value="<?php echo $result['twitter']?>" class="form-control" placeholder="twitter">
                                     </div>
                                 </div>
                                 <div class="form-group">

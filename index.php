@@ -375,17 +375,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!---footer--->
 	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 	<!--copy-->
-	<div class="copy-section wow fadeInLeft animated" data-wow-delay=".5s"">
-		<div class="container">
-				<div class="social-icons">
-					<a href="#"><i class="icon"></i></a>
-					<a href="#"><i class="icon1"></i></a>
-					<a href="#"><i class="icon2"></i></a>
-					<a href="#"><i class="icon3"></i></a>
-				</div>
-            <p><a href="https://mr-zare.ir"><?php echo $settings['copyright'] ?></a></p>
-		</div>
-	</div>
+        <div class="copy-section wow fadeInLeft animated" data-wow-delay=".5s" >
+            <div class="container" style="display: flex;flex-wrap: wrap;flex-direction: column;align-content: center;align-items: center;">
+                <div class="social-icons">
+                    <a href="<?php echo $settings['facebook']; ?>"><i class="icon"></i></a>
+                    <a href="<?php echo $settings['twitter']; ?>"><i class="icon1"></i></a>
+                    <a href="<?php echo $settings['instagram']; ?>"><i class="icon3"></i></a>
+                </div>
+                <p><?php echo $settings['copyright'] ?></p>
+            </div>
+        </div>
 	<!--copy-->
 </body>
 <!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->

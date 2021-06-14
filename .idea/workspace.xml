@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac7f45ab-5a5a-4945-98a6-f9e9909a47c5" name="Default Changelist" comment="" />
+    <list default="true" id="ac7f45ab-5a5a-4945-98a6-f9e9909a47c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/settings/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/iranflag11.png/logo-1389692981.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/menu/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/menu/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/settings/list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/4df67d5b-de54-4350-a91d-c4b6508e8531.jpg/logo-272864195.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,11 +36,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1rbP3OqA4quMMea9zgvbhfZEvj0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -64,11 +82,25 @@
       <workItem from="1619527302427" duration="677000" />
       <workItem from="1619587112875" duration="20135000" />
       <workItem from="1619883850599" duration="646000" />
-      <workItem from="1623665784013" duration="330000" />
+      <workItem from="1623665784013" duration="8555000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 <?php
 include_once 'include/functions.php';
+$settings=show_settings();
 if(isset($_POST['btn'])){
     include_once 'include/contact.php';
     $data=$_POST['frm'];
@@ -8,9 +9,9 @@ if(isset($_POST['btn'])){
 ?>
 <!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 <!DOCTYPE HTML>
-<html>
+<html lang="fa">
 <head>
-<title>قالب سایت کشاورزی</title>
+<title><?php echo $settings['title'] ?></title>
 <!---css--->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
@@ -43,7 +44,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 				<div class="head-bottom">
 					<div class="logo  wow fadeInDownBig animated animated" data-wow-delay="0.4s">
-						<h1><a href="index.html">Agrox<span>Farming company</span></a></h1>
+						<h1><a href="index.html"><?php echo $settings['title'] ?><span><?php echo $settings['logotype'] ?></span></a></h1>
 					</div>
 				</div>
 			</div>
@@ -65,16 +66,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</button>
 						</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.html" class="wow fadeInDownBig" data-wow-delay=".1s">صفحه اصلی<span class="sr-only">(current)</span></a></li>
-								<li><a href="about.html" class="wow fadeInDownBig" data-wow-delay=".2s">درباره ما</a></li>
-								<li><a href="services.html" class="wow fadeInDownBig" data-wow-delay=".4s">خدمات</a></li>
-								<li><a href="gallery.html" class="wow fadeInDownBig" data-wow-delay=".6s">گالری</a></li>
-								<li><a href="codes.html" class="wow fadeInDownBig" data-wow-delay=".7s">نمونه ها</a></li>
-								<li><a href="contact.html" class="wow fadeInDownBig" data-wow-delay=".9s">تماس با ما</a></li>
-							</ul>
-						</div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <?php
+                                $row=listmenudefault();
+                                foreach ($row as $val):
+                                    ?>
+                                    <li class="dropdown">
+                                        <a href="<?php echo $val['url']; ?>" class="wow fadeInDownBig" data-wow-delay=".2s"><?php echo $val['title']; ?></a>
+                                        <?php
+                                        $rows=list_Sub_Menu_Default($val['id']);
+                                        if ($rows):
+                                            ?>
+                                            <ul class="dropdown-menu">
+                                                <?php
+                                                foreach ($rows as $value):
+                                                    ?>
+                                                    <li>
+                                                        <a href="<?php echo $value['url']; ?>"><?php echo $value['title']; ?></a>
+                                                    </li>
+                                                <?php
+                                                endforeach;
+                                                ?>
+                                            </ul>
+                                        <?php
+                                        endif;
+                                        ?>
+                                    </li>
+                                <?php
+                                endforeach;
+                                ?>
+                            </ul>
+                        </div>
 					</div>
 				</nav>
 			</div>
@@ -91,11 +114,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h4>اطلاعات تماس</h4>
 					<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </p>
 					<ul>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>تلفن<span>+8 (213) 746 820 82</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>ایمیل<a href="mailto:info@example.com">info@example.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>تلفن<span><?php echo $settings['tel'] ?></span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>ایمیل<a href="mailto:<?php echo $settings['email'] ?>"><?php echo $settings['email'] ?></a></li>
 					</ul>
 					<ul>
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>آدرس<span>تهران-خ شریعتی ابتدای خیابان ملک کوچه ایرانیاد پلاک1</span></li>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>آدرس<span><?php echo $settings['address'] ?></span></li>
 					</ul>
 				</div>
 				<div class="col-md-6 mail-right wow fadeInRight animated" data-wow-delay=".5s">
@@ -125,7 +148,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<h4>مکان بر روی نقشه</h4>
 		</div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26359195.17562375!2d-113.7156245614499!3d36.2473834534249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1452332634941" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe src="https://maps.google.com/maps?q=Tabriz&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div>
 	
 	</div>
@@ -181,13 +204,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-3 footer-grid wow fadeInLeft animated" data-wow-delay=".5s">
 					<h4>تماس با ما</h4>
-					<p>تهران-شریعتی</p>
-					<p>خ ملک کوچه ایرانیاد</p>
-					<p>تلفن رایگان: +1 900 448 9990</p>
-					<p>
-تلفن: +1 459 503 7035</p>
-					<p>فکس: + 1 304 789 7898</p>
-					<a href="mailto:example@mail.com"> example@mail.com</a>
+					<p><?php echo $settings['address'] ?></p>
+					<p>تلفن: <?php echo $settings['tel'] ?></p>
+					<p>فکس: <?php echo $settings['fax'] ?></p>
+					<a href="mailto:<?php echo $settings['email'] ?>"> <?php echo $settings['email'] ?></a>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -199,12 +219,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="copy-section wow fadeInLeft animated" data-wow-delay=".5s"">
 		<div class="container">
 				<div class="social-icons">
-					<a href="#"><i class="icon"></i></a>
-					<a href="#"><i class="icon1"></i></a>
-					<a href="#"><i class="icon2"></i></a>
-					<a href="#"><i class="icon3"></i></a>
+					<a href="<?php echo $settings['facebook']; ?>"><i class="icon"></i></a>
+					<a href="<?php echo $settings['twitter']; ?>"><i class="icon1"></i></a>
+					<a href="<?php echo $settings['instagram']; ?>"><i class="icon3"></i></a>
 				</div>
-		<p>کلیه حقوق مادی و معنوی برای مجموعه برنامه نویسان محفوظ می باشد <a href="http://barnamenevisan.org/">برنامه نویسان</a></p>
+		<p><?php echo $settings['copyright'] ?></p>
 		</div>
 	</div>
 	<!--copy-->

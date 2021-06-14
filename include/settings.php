@@ -7,6 +7,6 @@ function show_settings(){
 }
 function edit_settings($data,$logo){
     $connection=config();
-    $sql="UPDATE settings_tbl SET title='$data[title]',logo='$logo',description='$data[description]',copyright='$data[copyright]',facebook='$data[facebook]',instagram='$data[instagram]',tel='$data[tel]',fax='$data[fax]',aboutus='$data[aboutus]',logotype='$data[logotype]',email='$data[email]',address='$data[address]',map='$data[map]'";
+    $sql="UPDATE settings_tbl SET title='$data[title]',logo='$logo',description='$data[description]',copyright='$data[copyright]',facebook='$data[facebook]',instagram='$data[instagram]',tel='$data[tel]',fax='$data[fax]',aboutus='$data[aboutus]',logotype='$data[logotype]',email='$data[email]',address='$data[address]',map='$data[map]',twitter='$data[twitter]'";
     mysqli_query($connection,$sql);
 }

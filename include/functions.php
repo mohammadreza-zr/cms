@@ -38,6 +38,7 @@ session_start();
         move_uploaded_file($from,$to);
         return $to;
     }
+    include_once 'settings.php';
     @$m=$_GET['m']?$_GET['m']:'index';
     switch ($m){
         case 'index':
@@ -58,9 +59,6 @@ session_start();
             break;
         case 'contact':
             include_once 'contact.php';
-            break;
-        case 'settings':
-            include_once 'settings.php';
             break;
     }
     ?>

@@ -2,6 +2,7 @@
 if (isset($_POST['btn'])){
     $data=$_POST['frm'];
     addmenu($data);
+    echo 'افزوده شد';
 }
 ?>
 

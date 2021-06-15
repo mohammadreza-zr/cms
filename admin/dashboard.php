@@ -4,6 +4,7 @@
         header("location: index.php?login=first");
     }
 $settings=show_settings();
+$count=count_contact();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +16,56 @@ $settings=show_settings();
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="img/favicon.html">
     <script src="//cdn.ckeditor.com/4.16.1/full/ckeditor.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function myFunction(value) {
+            var copyText = value;
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            value.parentNode.childNodes[3].innerText='کپی شد!';
+        }
+    </script>
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted #000000;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
     <title><?php echo $settings['title']?></title>
 
     <!-- Bootstrap core CSS -->
@@ -136,67 +187,38 @@ $settings=show_settings();
                     <li id="header_inbox_bar" class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <i class="icon-envelope-alt"></i>
-                            <span class="badge bg-important">5</span>
+                            <span class="badge bg-important"><?php echo $count['COUNT(*)'];?></span>
                         </a>
                         <ul class="dropdown-menu extended inbox">
                             <div class="notify-arrow notify-arrow-red"></div>
                             <li>
-                                <p class="red">شما 5 پیام جدید دارید</p>
+                                <p class="red">شما <?php echo $count['COUNT(*)'];?> پیام جدید دارید </p>
                             </li>
+                            <?php
+                            $list=show_contact();
+                            if (isset($list)){
+                            foreach ($list as $val):
+                            ?>
                             <li>
-                                <a href="#">
-                                    <span class="photo">
-                                        <img alt="avatar" src="img/avatar-mini.jpg"></span>
-                                    <span class="subject">
-                                        <span class="from">
-
-                                            <!--seesion username-->
-
-                                        </span>
-                                        <span class="time">همین حالا</span>
-                                    </span>
-                                    <span class="message">سلام،متن پیام نمایشی جهت تست
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
+                                <a href="dashboard.php?m=contact&p=detail&id=<?php echo $val['id']; ?>">
                                     <span class="photo">
                                         <img alt="avatar" src="img/avatar-mini2.jpg"></span>
                                     <span class="subject">
-                                        <span class="from">ایمان مدائنی</span>
-                                        <span class="time">10 دقیقه قبل</span>
+                                        <span class="from"><?php echo $val['name']?></span>
+                                        <span class="time"><?php echo $val['time']?></span>
                                     </span>
-                                    <span class="message">سلام، چطوری شما؟
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="photo">
-                                        <img alt="avatar" src="img/avatar-mini3.jpg"></span>
-                                    <span class="subject">
-                                        <span class="from">صبا ذاکر</span>
-                                        <span class="time">3 ساعت قبل</span>
-                                    </span>
-                                    <span class="message">چه پنل مدیریتی فوق العاده ایی
+                                    <span class="message"><?php echo $val['subject']?>
                                     </span>
                                 </a>
                             </li>
+                            <?php
+                            endforeach;
+                            }else{
+                                echo "<li style='padding: 10px;'>هیچ پیامی وجود ندارد!</li>";
+                            }
+                            ?>
                             <li>
-                                <a href="#">
-                                    <span class="photo">
-                                        <img alt="avatar" src="img/avatar-mini4.jpg"></span>
-                                    <span class="subject">
-                                        <span class="from">مسعود شریفی</span>
-                                        <span class="time">همین حالا</span>
-                                    </span>
-                                    <span class="message">سلام،متن پیام نمایشی جهت تست
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">نمایش تمامی پیام ها</a>
+                                <a href="dashboard.php?m=contact&p=list">نمایش تمامی پیام ها</a>
                             </li>
                         </ul>
                     </li>

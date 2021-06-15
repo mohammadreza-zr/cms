@@ -1,7 +1,8 @@
 <?php
 function addContact($data){
     $connection=config();
-    $sql="INSERT INTO contact_tbl (name,text,subject,email) VALUES ('$data[name]','$data[text]','$data[subject]','$data[email]')";
+    $date=date('h:i Y-m-d');
+    $sql="INSERT INTO contact_tbl (name,text,subject,email,time) VALUES ('$data[name]','$data[text]','$data[subject]','$data[email]','$date')";
     mysqli_query($connection,$sql);
     header("location: http://localhost/php/cms/contact.php?send=ok");
 }
@@ -22,7 +23,9 @@ function deleteContact($id){
 function show_detail($id){
     $connection=config();
     $sql="SELECT * FROM contact_tbl WHERE id='$id'";
+    $sql2="UPDATE contact_tbl SET seen='1' WHERE id='$id'";
     $row=mysqli_query($connection,$sql);
+    mysqli_query($connection,$sql2);
     return mysqli_fetch_assoc($row);
 }
 /*function newscat(){

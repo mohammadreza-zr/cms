@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac7f45ab-5a5a-4945-98a6-f9e9909a47c5" name="Default Changelist" comment="products page edited...">
-      <change afterPath="$PROJECT_DIR$/admin/page/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/page/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/page/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploader/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploader/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploader/list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/uploader/file-805676291.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/page.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/uploader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/contact/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/contact/detail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/news/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/news/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/widget/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/page/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/page/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/page/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/procat.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/procat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/widget.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/widget.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

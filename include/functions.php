@@ -38,6 +38,21 @@ session_start();
         move_uploaded_file($from,$to);
         return $to;
     }
+    function count_contact(){
+        $connection=config();
+        $sql="SELECT COUNT(*) FROM `contact_tbl` WHERE seen = '0'";
+        $row=mysqli_query($connection,$sql);
+        return mysqli_fetch_assoc($row);
+    }
+    function show_contact(){
+        $connection=config();
+        $sql="SELECT * FROM contact_tbl where seen='0'";
+        $row=mysqli_query($connection,$sql);
+        while($res=mysqli_fetch_assoc($row)){
+            $result[]=$res;
+        }
+        return @$result;
+    }
     include_once 'settings.php';
     $settings=show_settings();
     @$m=$_GET['m']?$_GET['m']:'index';

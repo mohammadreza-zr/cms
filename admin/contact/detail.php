@@ -10,14 +10,18 @@
                 <?php echo $result['name'].": ".$result['subject']?>
             </header>
             <div class="panel-body">
+                <h6>
+                    <h4>زمان:</h4>
+                    <?php echo $result['time']?>
+                </h6>
                 <p>
                     <h4>متن پیام:</h4>
                     <?php echo $result['text']?>
                 <br>
-                <h6>
+                <h5>
                     <h4>ایمیل:</h4>
                     <?php echo $result['email']?>
-                </h6>
+                </h5>
             </div>
         </section>
     </div>

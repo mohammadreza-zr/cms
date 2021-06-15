@@ -1,9 +1,43 @@
 <?php
-function addnews($data,$img){
+function file_uploader ($file){
+    $file=$_FILES[$file];
+    $fileName=$file['name'];
+    $size=$file['size'];
+    $array=explode(".",$fileName);
+    $ext=end($array);
+    $newName='file-'.rand().'.'.$ext;
+    $from=$file['tmp_name'];
+    $to='../images/uploader/'.$newName;
+    move_uploaded_file($from,$to);
+    return $a=array($to,$size);
+}
+function add_file($data,$name,$size){
     $connection=config();
-    $sql="INSERT INTO news_tbl (title,text,img,news_cat,date) VALUES ('$data[title]','$data[text]','$img','$data[newscat]','$data[date]')";
+    $sql="INSERT INTO uploader_tbl (title,img,size) VALUES ('$data[title]','$name','$size')";
     mysqli_query($connection,$sql);
 }
+function list_file(){
+    $connection=config();
+    $sql="SELECT * FROM uploader_tbl";
+    $row=mysqli_query($connection,$sql);
+    while($res=mysqli_fetch_assoc($row)){
+        $result[]=$res;
+    }
+    return @$result;
+}
+function delete_file($id){
+    $connection=config();
+    //select file address from database
+    $sql2="SELECT * FROM uploader_tbl WHERE id='$id'";
+    $row2=mysqli_query($connection,$sql2);
+    $res=mysqli_fetch_assoc($row2);
+    //delete from database
+    $sql="DELETE FROM uploader_tbl WHERE id='$id'";
+    $row=mysqli_query($connection,$sql);
+    //delete file
+    unlink($res['img']);
+}
+/*
 function newscat(){
     $connection=config();
     $sql="SELECT * FROM news_cat";
@@ -13,15 +47,7 @@ function newscat(){
     }
     return $result;
 }
-function listnewsadmin(){
-    $connection=config();
-    $sql="SELECT * FROM news_tbl";
-    $row=mysqli_query($connection,$sql);
-    while($res=mysqli_fetch_assoc($row)){
-        $result[]=$res;
-    }
-    return @$result;
-}
+
 function selectNewsCat($catid){
     $connection=config();
     $sql="SELECT * FROM `news_cat` WHERE id=$catid";
@@ -29,11 +55,7 @@ function selectNewsCat($catid){
     $res=mysqli_fetch_assoc($row);
     return $res['title'];
 }
-function deletenews($id){
-    $connection=config();
-    $sql="DELETE FROM news_tbl WHERE id='$id'";
-    $row=mysqli_query($connection,$sql);
-}
+
 function show_edit_news($id){
     $connection=config();
     $sql="SELECT * FROM news_tbl WHERE id='$id'";
@@ -88,4 +110,4 @@ function listnewsdefault(){
         $result[]=$res;
     }
     return $result;
-}
+}*/

@@ -1,20 +1,25 @@
 <?php
 include_once 'include/functions.php';
+@$id=$_GET['id'];
+if(!isset($id)){
+    header("location: page.php?id=1");
+}
+$result=detail_page($id);
 $settings=show_settings();
 ?>
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 <!DOCTYPE HTML>
-<html lang="fa">
+<html>
 <head>
-<title><?php echo $settings['title'] ?></title>
-    <link rel="shortcut icon" href="admin/<?php echo $settings['logo'] ?>" type="image/x-icon">
+<title><?php echo $result['title']?></title>
 <!---css--->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <!---css--->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Agrox Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<meta name="keywords" content="<?php echo $result['keywords']?>" />
+<meta name="description" content="<?php echo $result['description']?>" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!---js--->
 <script src="js/jquery-1.12.0.min.js"></script>
@@ -27,7 +32,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			new WOW().init();
 		</script>
 	<!--//end-animate-->
+
 <!---webfont--->
+<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!---webfont--->
@@ -61,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav">
                                 <?php
                                 $row=listmenudefault();
                                 foreach ($row as $val):
@@ -90,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <?php
                                 endforeach;
                                 ?>
-							</ul>
+                            </ul>
 						</div>
 					</div>
 				</nav>
@@ -99,35 +106,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---banner-->
 	<!---welcome-->
 	<div class="content">
-		<div class="overview">
-			<div class="container">
-				<h3>لیست محصولات</h3>
-				<div class="overview-grids">
-                    <?php
-                    @$products=listProDefault();
-                    if (isset($products)){
-                    foreach ($products as $value):
-                    ?>
-					<div class="col-md-3 list-grid wow fadeInLeft animated" data-wow-delay=".5s">
-						<div class="list-img">
-							<img src="admin/<?php echo $value['img']?>" width="200" height="200" alt=" " />
-							<div class="textbox"></div>
-						</div>
-						<h4><?php echo $value['title']?></h4>
-						<p><?php echo $value['text']?></p>
-					</div>
-                    <?php
-                    endforeach;
-                    }else{
-                        echo "<span style='font-size: 25px;'>محصولی یافت نشد!</span>";
-                    }
-                    ?>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div>
+		<!--typo-starts-->
+		<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
+	<div class="pages">
+		<div class="container">
+            <?php echo $result['body']?>
+		</div>	
+	</div>	
+	<!--typo-ends-->
+
 	</div>
 	<!---footer--->
+	<!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 		<div class="footer-section">
 			<div class="container">
 			<div class="footer-grids">

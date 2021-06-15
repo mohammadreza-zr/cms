@@ -67,30 +67,3 @@ function list_Sub_Menu_Default($id){
         return $result;
     }
 }
-function listProDefault(){
-    $connection=config();
-    $sql="SELECT * FROM product_tbl";
-    $row=mysqli_query($connection,$sql);
-    while($res=mysqli_fetch_assoc($row)){
-        $result[]=$res;
-    }
-    return $result;
-}
-function listnewsdefault(){
-    $connection=config();
-    $sql="SELECT * FROM news_tbl";
-    $row=mysqli_query($connection,$sql);
-    while($res=mysqli_fetch_assoc($row)){
-        $result[]=$res;
-    }
-    return $result;
-}
-function list_widget_default(){
-    $connection=config();
-    $sql="SELECT * FROM widget_tbl";
-    $row=mysqli_query($connection,$sql);
-    while ($res=mysqli_fetch_assoc($row)){
-        $result[]=$res;
-    }
-    return $result;
-}

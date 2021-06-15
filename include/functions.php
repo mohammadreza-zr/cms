@@ -43,6 +43,15 @@ session_start();
     @$m=$_GET['m']?$_GET['m']:'index';
     switch ($m){
         case 'index':
+            include_once 'menu.php';
+            include_once 'procat.php';
+            include_once 'products.php';
+            include_once 'newscat.php';
+            include_once 'news.php';
+            include_once 'contact.php';
+            include_once 'widget.php';
+            include_once 'page.php';
+            break;
         case 'menu':
             include_once 'menu.php';
             break;
@@ -63,6 +72,12 @@ session_start();
             break;
         case 'widget':
             include_once 'widget.php';
+            break;
+        case 'page':
+            include_once 'page.php';
+            break;
+        case 'uploader':
+            include_once 'uploader.php';
             break;
     }
     ?>

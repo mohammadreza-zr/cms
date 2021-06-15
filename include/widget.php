@@ -65,3 +65,12 @@ function edit_widget($data,$id,$img,$oldPic){
     $sql="UPDATE widget_tbl SET title='$data[title]',text='$data[text]',img='$pic' WHERE id='$id'";
     mysqli_query($connection,$sql);
 }
+function list_widget_default(){
+    $connection=config();
+    $sql="SELECT * FROM widget_tbl";
+    $row=mysqli_query($connection,$sql);
+    while ($res=mysqli_fetch_assoc($row)){
+        $result[]=$res;
+    }
+    return $result;
+}

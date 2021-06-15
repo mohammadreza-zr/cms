@@ -28,7 +28,7 @@ if (isset($_POST['btn'])){
                 <form role="form" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="exampleInputEmail1">عنوان خبر</label>
-                        <input type="text" name="frm[title]" class="form-control" placeholder="عنوان محصول را وارد کنید">
+                        <input type="text" name="frm[title]" class="form-control" placeholder="عنوان خبر را وارد کنید">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">تاریخ خبر</label>

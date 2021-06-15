@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac7f45ab-5a5a-4945-98a6-f9e9909a47c5" name="Default Changelist" comment="CKeditor added...">
-      <change afterPath="$PROJECT_DIR$/images/news/news-1616946139/product-1991220538.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products/pro-679673108/product-1307983911.jpg" afterDir="false" />
+    <list default="true" id="ac7f45ab-5a5a-4945-98a6-f9e9909a47c5" name="Default Changelist" comment="products page edited...">
+      <change afterPath="$PROJECT_DIR$/admin/page/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/page/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/page/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploader/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploader/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploader/list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/uploader/file-805676291.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/uploader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/news/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/news/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/widget/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/page/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/procat.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/procat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/widget.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/widget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +96,9 @@
       <workItem from="1619527302427" duration="677000" />
       <workItem from="1619587112875" duration="20135000" />
       <workItem from="1619883850599" duration="646000" />
-      <workItem from="1623665784013" duration="16815000" />
+      <workItem from="1623665784013" duration="17138000" />
+      <workItem from="1623690817671" duration="5441000" />
+      <workItem from="1623733986546" duration="7877000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1623677568850</created>
@@ -102,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623684713320</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="products page edited...">
+      <created>1623686106277</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623686106277</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,12 +144,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update" />
     <MESSAGE value="widget settings added..." />
     <MESSAGE value="CKeditor added..." />
-    <option name="LAST_COMMIT_MESSAGE" value="CKeditor added..." />
+    <MESSAGE value="products page edited..." />
+    <option name="LAST_COMMIT_MESSAGE" value="products page edited..." />
   </component>
 </project>

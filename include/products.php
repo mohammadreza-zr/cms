@@ -29,11 +29,6 @@ function selectProCat($catid){
     $res=mysqli_fetch_assoc($row);
     return $res['title'];
 }
-function deletemenu($id){
-    $connection=config();
-    $sql="DELETE FROM menu_tbl WHERE id='$id'";
-    $row=mysqli_query($connection,$sql);
-}
 function show_edit_product($id){
     $connection=config();
     $sql="SELECT * FROM product_tbl WHERE id='$id'";
@@ -80,16 +75,6 @@ function edit_product($data,$id,$img,$oldPic){
     $sql="UPDATE product_tbl SET title='$data[title]',text='$data[text]',procat='$data[procat]',img='$pic' WHERE id='$id'";
     mysqli_query($connection,$sql);
 }
-function listmenudefault(){
-    $connection=config();
-    $sql="SELECT * FROM menu_tbl WHERE status='1' AND chid='0' ORDER BY sort ASC";
-    $row=mysqli_query($connection,$sql);
-    while($res=mysqli_fetch_assoc($row)){
-        $result[]=$res;
-    }
-    return $result;
-}
-
 function deletePro($id){
     $connection=config();
     $sql="DELETE FROM product_tbl WHERE id='$id'";
@@ -102,4 +87,12 @@ function deletePro($id){
     rmdir("../".$array[$total-4]."/".$array[$total-3]."/".$array[$total-2]);
     $row=mysqli_query($connection,$sql);
 }
-
+function listProDefault(){
+    $connection=config();
+    $sql="SELECT * FROM product_tbl";
+    $row=mysqli_query($connection,$sql);
+    while($res=mysqli_fetch_assoc($row)){
+        $result[]=$res;
+    }
+    return $result;
+}

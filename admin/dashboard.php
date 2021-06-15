@@ -313,6 +313,17 @@ $settings=show_settings();
                     <li class="sub-menu">
                         <a href="javascript:" class="">
                             <i class="las la-bars"></i>
+                            <span>مدیریت صفحه ها</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="dashboard.php?m=page&p=list">لیست صفحه ها</a></li>
+                            <li><a class="" href="dashboard.php?m=page&p=add">افزودن صفحه جدید</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:" class="">
+                            <i class="las la-bars"></i>
                             <span>مدیریت منو ها</span>
                             <span class="arrow"></span>
                         </a>
@@ -384,6 +395,17 @@ $settings=show_settings();
                         <ul class="sub">
                             <li><a class="" href="dashboard.php?m=widget&p=list">لیست ویجت ها</a></li>
                             <li><a class="" href="dashboard.php?m=widget&p=add">افزودن ویجت جدید</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:" class="">
+                            <i class="las la-bars"></i>
+                            <span>مدیریت فایل ها</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="dashboard.php?m=uploader&p=list">لیست فایل ها</a></li>
+                            <li><a class="" href="dashboard.php?m=uploader&p=add">افزودن فایل جدید</a></li>
                         </ul>
                     </li>
                 </ul>

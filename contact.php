@@ -2,7 +2,6 @@
 include_once 'include/functions.php';
 $settings=show_settings();
 if(isset($_POST['btn'])){
-    include_once 'include/contact.php';
     $data=$_POST['frm'];
     addContact($data);
 }
